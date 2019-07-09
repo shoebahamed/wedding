@@ -7,9 +7,12 @@ const Styles = styled.div`
   .navbar {
     background-color: #222;
   }
+  .navbar-toggler-icon{
+    filter: invert(1);
+  }
 
-  a, .navbar-brand, .navbar-nav .nav-link {
-    color: #bbb;
+  a, .navbar-brand, .navbar-nav .nav-link,.navbar-toggler-icon {
+    color: #f5e8e8;
 
     &:hover {
       color: white;
@@ -37,6 +40,11 @@ export const NavigationBar = () => (
           <Nav.Item>
             <Nav.Link>
               <Link to="/events">Events</Link>
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link>
+              <Link to="/gallery">Gallery</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
